@@ -1,33 +1,57 @@
 using System;
-
+using System.IO;
 class Program
 {
     static void Main(string[] args)
     {
-        Job job1 = new Job ();
-        job1._jobTitle = "Electrical Technician";
-        job1._company = "Subaru Kenya";
-        job1._startYear = 2021;
-        job1._endYear = 2025;
-        job1.Display();
-
-        Job job2 = new Job ();
-        job2._jobTitle = "Software Engineer";
-        job2._company = "Microsoft";
-        job2._startYear = 2025;
-        job2._endYear = 2028;
-        job2.Display();
-
-        Resume myResume = new Resume();
-        myResume._name = "Tonny L.Lime";
-
-        myResume._jobs.Add(job1);
-        myResume._jobs.Add(job2);
-
-        myResume.Display();
-
-
+        Journal journal = new Journal();
         
+        Console.WriteLine(" Welcome to Today journal writing!");
 
+        while (true) {
+            Console.WriteLine("Menu:");
+            Console.WriteLine("1.Add Entry");
+            Console.WriteLine("2.Display");
+            Console.WriteLine("3.Load");
+            Console.WriteLine("4.Save");
+            Console.WriteLine("5.Quit");
+            //propmpt user to select option
+            Console.Write("Please select an option (1-5) ");
+            string choice = Console.ReadLine();
+            // call class method
+            switch (choice)
+            {
+                // add new entry to the journal
+                case "1":
+                journal.AddEntry();
+                break;
+
+                // display added entry
+                case "2":
+                journal.DisplayEntries();
+                break;
+
+                
+                // load entries from a file
+                case "3":
+                journal.LoadFromFile();
+                break;
+
+                // save entries to a file
+                case "4":
+                journal.SaveToFile();
+                break;
+
+                // exit
+                case "5":
+                Console.WriteLine("quit!");
+                break;
+
+                // wrong choice selection
+                default:
+                Console.WriteLine("Wrong choice, Please enter a number between 1-5." );
+                break;
+            }
+        }
     }
 }

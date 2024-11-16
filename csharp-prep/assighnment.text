@@ -1,0 +1,35 @@
+Meaning of version control
+    Is a system that tracks the history of changes as people and teams collaborate  on project together.
+Benefits of version control:
+    1 Gives each contributer a unified and consistent view of a project, surfacing work that is already in progress.
+    2 Lets developer see the entire timeline of their changes,decisions and progress of any project in one place.
+Example  of version control
+    1 Github
+    It hosts Git respositories and provides developer with tools to ship better code through command  line features,
+    issues,pull request,code review, or the use of a collection of free and for-purchase apps  in the Github Marketplace.
+    With collaboration layers like the Github flow, a community of 100 million developers, and an ecosystem with hundreds 
+    of integrations,Github changes the way software is built.
+    It builds collaboration directly into the development process.work is organized into respositories where developers can
+    outline  requirements or direction and set expectations for team members.
+    Using Github flow, developers simply create a branch to work on updates, commit changes  to save them,open a pull request
+    to propose and discuss changes and merge pull requests once everyone is on the same page.
+
+Commands used in version control:
+    1 git init-initializes a brand new Git respository and begins tracking an existing directory
+               It adds a hidden  subfolder within  the existing directory that houses the internal data structure required
+               for version control.
+    2 git clone - Creates  a local copy of a project that already exists remotely.
+    3 git add - Stages a change.
+                tracks changes to a developer's codebase.
+    4 git commit - Saves  the snapshot to the project history and completes the change-tracking process.
+    5 git status - Shows the status of the changes as untracked, modified or staged.
+    6 git branch - Shows the branches being worked on locally.
+    7 git merge - Merges lines of development together.
+                  combines changes made on two distinct branches.
+    8 git pull - updates the local line of development with updates from remote counterpart.
+                developers use this command if a teammate has made commits to a branch on a remote, and they would like to 
+                reflect those changes in their local environments.
+    9 Git puss - updates the remote respository with any commits made locally to a branch.
+
+
+

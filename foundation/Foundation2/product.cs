@@ -11,4 +11,11 @@ public class Product
     {
         return(_productPrice * _productQuantity);
     }
+
+    internal void Add(object value)
+    {
+        throw new NotImplementedException();
+    }
+
+    public double SubTotal { get { return this._productPrice * this._productQuantity; } }
 }

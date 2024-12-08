@@ -30,24 +30,9 @@ public class Activity
     {
         _duration = duration;
     }
-    public Activity(string name, string description,int duration)
+    public Activity()
     {
-        Console.WriteLine("Menu option");
-        Console.WriteLine("  1 Start Breathing Activity.");
-        Console.WriteLine("  2 Start listing activity.");
-        Console.WriteLine("  3 Start reflecting activity.");
-        Console.WriteLine("  4 Quit.");
-        Console.WriteLine("Select a choice from the menu: ");
         
-        
-        
-      {
-       return ;
-      }
-      //_name = name;
-      //_description = description;
-      //_duration = duration;
-    
     }
     public void DisplayStartingMessage()
     {
@@ -60,11 +45,11 @@ public class Activity
     }
     public void ShowSpinner(int seconds)
     {
-        
+        Console.WriteLine($"");
     }
     public void ShowCountDown(int seconds)
     {
-        
+        Console.WriteLine($"");
     }
     
     

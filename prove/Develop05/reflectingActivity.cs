@@ -3,12 +3,12 @@ using System;
 public class ReflectingActivity
 {
     public List<string>_prompts;
-    public List<string>_question;
+    public List<string>_questions;
     public ReflectingActivity()
     {
 
     }
-    public Run()
+    public void Run()
     {
 
     }
@@ -18,15 +18,15 @@ public class ReflectingActivity
     }
      public string  GetRandomQuestion()
     {
-        return $"{_question}";
+        return $"{_questions}";
     }
     public void DisplayPrompt()
     {
-
+        Console.WriteLine($"{_prompts}");
     }
     public void DisplayQuestions()
     {
-        
+        Console.WriteLine($"{_questions}");
     }
 
 

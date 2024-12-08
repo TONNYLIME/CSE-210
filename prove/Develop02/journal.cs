@@ -9,7 +9,7 @@ public class Journal
     public Journal() 
     {
         _entries = new List<Entry>();
-        //promptGenerator = new PromptGenerator();
+        promptGenerator = new PromptGenerator();
     }
 
 

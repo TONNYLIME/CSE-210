@@ -20,12 +20,8 @@ public class ListingActivity: Activity
     {
         _prompts = prompts;
     }
-    public ListingActivity(string name, string description,int duration,int count) : base(name,description,duration)
+    public ListingActivity()
     {
-        _name =name;
-        _description = description;
-        _duration = duration;
-        _count = count;
         
         
     }
@@ -35,7 +31,7 @@ public class ListingActivity: Activity
     }
     public void GetRandomPrompt()
     {
-
+        Console.WriteLine($"{_prompts}");
     }
     public List<string> GetListFromUser()
     {

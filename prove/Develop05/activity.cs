@@ -30,9 +30,11 @@ public class Activity
     {
         _duration = duration;
     }
-    public Activity()
+    public Activity(string description, string name,  int duration)
     {
-        
+        _description = description;
+        _name = name;
+        _duration = duration;
     }
     public void DisplayStartingMessage()
     {
@@ -51,8 +53,21 @@ public class Activity
     {
         Console.WriteLine($"");
     }
-    
-    
 
     
+
+    internal static void ListingActivity()
+    {
+        throw new NotImplementedException();
+    }
+
+    internal static void ReflectingActivity()
+    {
+        throw new NotImplementedException();
+    }
+
+    internal static void BreathingActivity()
+    {
+        throw new NotImplementedException();
+    }
 }

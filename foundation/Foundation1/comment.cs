@@ -3,13 +3,26 @@ public class Comment
 {
     public string _name;
     public string _comment;
-    public List<Video> _videos = new List<Video>();
-
-    
-
-    public void Display()
+    public string GetName()
     {
-        Console.WriteLine($"Name of the person: {_name}");
-        Console.Write($"Comment: {_comment}");
+        return _name;
     }
+    public void setName(string name)
+    {
+        _name = name;
+    }
+    public string GetComment()
+    {
+        return _comment;
+    }
+    public void setComment(string Comment)
+    {
+        _comment = Comment;
+    }
+    public Comment(string name,string Comment)
+    {
+        _name = name;
+        _comment = Comment;
+    }
+
 }

@@ -5,31 +5,33 @@ class Program
 {
     static void Main(string[] args)
     {
-        Video video1 = new Video();
-        video1._title = "xyx";
-        video1._author = "kenya";
-        video1._length = 3;
+         // Create a new video
+        Video video1 = new Video("Learning intro C#", "This video explains C# basics.", 20);
 
+        // Add some comments to the video
+        video1.AddComment(new Comment("Tonny ", "Great video! U r a nice teacher."));
+        video1.AddComment(new Comment("Lime ", "I found it a bit hard to follow. Could use more examples."));
 
-        Video video2 = new Video();
-        video2._title = "pgg";
-        video2._author = "ktn";
-        video2._length = 3;
-        
+        Video video2 = new Video("Learning  Abstraction in  C#", "This video explains how to simplify codes in  C# .",30);
 
+        // Add some comments to  video2
+        video2.AddComment(new Comment("Tonny ", "Great video! How I wish I was knowledgeble like you."));
+        video2.AddComment(new Comment("Lime ", "Wow now I get it. You've made my day"));
+        video2.AddComment(new Comment("Lumwaji ", "Finally I got it"));
 
-        Video video3 = new Video();
-        video3._title = "klm";
-        video3._author = "ctz";
-        video3._length = 3;
+        Video video3 = new Video("Learning  Encapsulation inC#", "This video explains how to hide some code in C# .", 60);
 
+        // Add some comments to video3
+        video3.AddComment(new Comment("Tonny ", "Why  is it always changing what is the aim?."));
+        video3.AddComment(new Comment("job ", "Tonny, it is changing coz you need to know how to privatize you variables."));
 
-        Comment myComment = new Comment();
-        myComment._name = "Tonny";
-        myComment._videos.Add(video1);
-        myComment._videos.Add(video2);
-        myComment._videos.Add(video3);
-
-        myComment.Display();
+        // Display video information along with comments
+        video1.DisplayVideoInfo();
+        video2.DisplayVideoInfo();
+        video3.DisplayVideoInfo();
+        Console.WriteLine($"Number of  comments: {video1.GetCommentNumber()}");
+        Console.WriteLine($"Number of  comments: {video2.GetCommentNumber()}");
+        Console.WriteLine($"Number of  comments: {video3.GetCommentNumber()}");
     }
+        
 }

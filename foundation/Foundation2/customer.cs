@@ -4,13 +4,42 @@ using System.Runtime.CompilerServices;
 
 public class Customer
 {
-    private string _customerName;
-    private  class _customerAddress;
-    public bool IsInUSA { get; private set; }
-    public void Address()
+    protected string _name;
+    protected bool _isInUsa;
+    
+        
+        
+    public bool GetIsInUsa()
     {
-       IsInUSA = true;
-       IsInUSA = false;
+        return _isInUsa;
     }
+    public void SetIsInUsa(bool IsInUSA)
+    {
+        _isInUsa = IsInUSA;
+    }
+    public string GetName()
+    {
+        return _name;
+    }
+    public void setName(string name)
+    {
+        _name = name;
+    }
+
+    public Customer(string name,bool IsInUSA)
+    {
+        _name = name;
+        
+    }
+    
+    
+    public void DisplayCustomerAddress()
+    {
+        Console.WriteLine($"Name of customer : {_name}");
+        //Console.WriteLine($"Is he from USA? {_isInUsa}");
+    }
+    
+    
+    
     
 }
